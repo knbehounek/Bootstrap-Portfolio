@@ -119,38 +119,14 @@ p {
 
 .portpic{
     border: 2px solid #777777;
-    margin-bottom: 20px;
 }
 
-.imagecontainer{
-    position: relative;
+#projectContainer{
+    clear: both;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
-.banner{
-    position: absolute;
-    width: 225px;
-    padding: 15px;
-    bottom: 40px;
-    background-color: #4aaaa5;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: #ffffff;
-    text-align: center;
-    -webkit-animation-name: banner; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
-    animation-name: banner;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-
-.banner:hover{
-    background-color: #777777;
-    color: #4aaaa5;
-    font-size: 25px;
-    animation: 0s;
-}
-  
 
 
 #button{
