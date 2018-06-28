@@ -137,25 +137,31 @@ p {
     width: 100%;
     left: 0;
     bottom: 30px;
-    background-color: #4aaaa5;
+    background-color: rgb(43, 43, 43);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: #ffffff;
     text-align: center;
 }
 
+.contactLeft {
+    border-right: #777777 solid 2px;
+}
+
+.alt{
+    margin-left: 10%;
+}
+
 .portLink {
     bottom: 0;
-    color: #666666;
+    color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
 
 .portLink:hover{
     text-decoration: none;
-    background-color: #4aaaa5;
     color: #ffffff;
-    font-size: 20px;
 }
 
 
