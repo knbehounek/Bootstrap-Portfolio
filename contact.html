@@ -13,21 +13,21 @@
         <div class="container">
             <div class="name">Kelby Behounek
             </div>
-            <nav class="navbar navbar-expand-lg navbar-light portnavbar">
+            <nav class="navbar navbar-expand-lg navbar-dark portnavbar">
                 <button class="navbar-toggler navbarTog" role="button" type="button" data-toggle="collapse" href="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse portnavbar" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link navlinks" href="index.html">About
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="portfolio.html">Portfolio</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="contact.html">Contact </a>
                         </li>
                     </ul>
@@ -39,26 +39,34 @@
         <div id="content">
             <div class="apc">Contact</div>
 
-            <div class="row">
+            <div class="row" id=" allContent">
                 <div class="col-md-6 contactLeft">
                     <form method="POST">
                         <div class="field">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name">
+                            <div class="row">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="row">
+                                <input type="text" name="name" id="name">
+                            </div>
                         </div>
                         <div class="field">
-                            <label for="email">Email</label>
-                            <input type="text" name="email" id="email">
+                            <div class="row">
+                                <label class="labelSpacer" for="email">Email</label>
+                            </div>
+                            <div class="row">
+                                <input type="text" name="email" id="email">
+                            </div>
                         </div>
                         <div class="field">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="3"></textarea>
+                            <div class="row">
+                                <label class="labelSpacer" for="message">Message</label>
+                            </div>
+                            <div class="row">
+                                <textarea name="message" id="message" rows="3"></textarea>
+                            </div>
                         </div>
-                        <ul class="actions">
-                            <li>
-                                <input type="submit" value="Send Message">
-                            </li>
-                        </ul>
+                        <input id="button" type="submit" value="Send Message">
                     </form>
                 </div>
 
@@ -76,11 +84,13 @@
                     <div class="alt">
                         <h3>Social</h3>
                         <a href="https://www.linkedin.com/in/kelby-behounek-352616148/">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxNrf7qTEQAjDTFWgNo2IC4xsdpFuWXM3qE9OnTo_RuX0GGvJ15g" alt="LinkedIn" height="50px" width="50px">
-                          </a>
-                          <a href="https://github.com/knbehounek">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_VWGgNdkB9crH-iBNMMWwsNZUm24m7X-1jUISsNKMNVJt6IlB" alt="GitHub" height="50px" width="50px">
-                          </a>   
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxNrf7qTEQAjDTFWgNo2IC4xsdpFuWXM3qE9OnTo_RuX0GGvJ15g" alt="LinkedIn"
+                                height="50px" width="50px">
+                        </a>
+                        <a href="https://github.com/knbehounek">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_VWGgNdkB9crH-iBNMMWwsNZUm24m7X-1jUISsNKMNVJt6IlB" alt="GitHub"
+                                height="50px" width="50px">
+                        </a>
                     </div>
                 </div>
             </div>

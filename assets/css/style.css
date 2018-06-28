@@ -3,23 +3,28 @@ html{
     min-height: 100%;
 }
 
+/* Body CSS */
+
 body{
     background: url("http://cdn.shopify.com/s/files/1/0165/7210/products/Charcoal_d7555461-c81b-41b4-b33e-cc9e062308f2_grande.jpg?v=1446147796");
     margin: 0;
     margin-bottom: 60px;
 }
 
+/* Header CSS */
 
 header{
     width: 100%;
     height: auto;
     background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqZiNVTrl3399H4fXz50rJOob25WLoQ_l4G5yrDWS8PinME0cy");
     margin-bottom: 20px;
-    overflow: auto;
+    overflow: hidden;
     border-bottom: #ffffff solid 7px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     right: 200px;
 }
+
+/* Header Content CSS */
 
 nav{
     float: right;
@@ -27,6 +32,16 @@ nav{
     top: 15px;
 
 }
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(43, 43, 43);
+    font-size: 18px;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: black;
+}
+
 
 
 
@@ -40,6 +55,7 @@ nav{
     padding: 26px;
     font-size: 30px;;
 }
+/* All Pages CSS */
 
 .container{
     max-width: 960px;
@@ -57,22 +73,8 @@ nav{
     padding-bottom: 50px;
 }
 
-
-label{
-    color: #777777;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#About{
-    border-right: #777777 solid 1px;
-}
-
-#Portfolio{
-    border-right: #777777 solid 1px;
-}
-
 .apc{
-    color: #4aaaa5;
+    color: black;
     text-align: left;
     margin-left: 2.5%;
     margin-right: 2.5%;
@@ -91,8 +93,51 @@ label{
     animation-iteration-count: infinite;
 }
 
+p {
+    color: rgb(43, 43, 43);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 20px;
+    line-height: 2;
+    padding-left: 20px;
+}  
+
+/*Footer CSS for all pages */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px; /* Set the fixed height of the footer here */
+    line-height: 60px; /* Vertically center the text there */
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqZiNVTrl3399H4fXz50rJOob25WLoQ_l4G5yrDWS8PinME0cy");
+    color: #ffffff;
+    text-align: center;
+    border-top: solid 8px #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    
+  }
+
+/*Alternates Content Heading to Black to Gray  for all pages*/
+@-webkit-keyframes apc {
+    0%   {color: Black;}
+    50%  {color: #777777;}
+}
+
+@keyframes apc {
+    0%   {color: black;}
+    50%  {color: #777777;}
+}
+
+/*Index CSS*/
+#selfpic{
+    margin-right: 20px;
+}
+
+/*Portfolio CSS */
+
 .projectHeader{
-    color: #4aaaa5;
+    color: black;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -100,24 +145,35 @@ label{
     margin-right: 2.5%;
     font-size: 22px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-p {
-    color: #777777;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-right: 20px;
-    line-height: 2;
-    padding-left: 20px;
-}   
-
-#selfpic{
-    margin-right: 20px;
+    -webkit-animation-name: projectheader; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: projectheader;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
 
 .portpic{
     border: 2px solid #777777;
 }
 
+label{
+    margin-left: 13%;
+    color: rgb(43, 43, 43);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.labelSpacer{
+    margin-top: 5px;
+}
+
+input{
+    margin-left: 12%;
+}
+
+textarea {
+    margin-left: 12%;
+    width: 70%
+}
 #projectContainer{
     clear: both;
     overflow-x: scroll;
@@ -144,14 +200,6 @@ p {
     text-align: center;
 }
 
-.contactLeft {
-    border-right: #777777 solid 2px;
-}
-
-.alt{
-    margin-left: 10%;
-}
-
 .portLink {
     bottom: 0;
     color: #ffffff;
@@ -164,61 +212,65 @@ p {
     color: #ffffff;
 }
 
+/*Alternates Content Heading to Black to Gray  for Portfolio page*/
+@-webkit-keyframes projectheader {
+    0%   {color: Black;}
+    50%  {color: #777777;}
+}
 
+@keyframes projectheader {
+    0%   {color: black;}
+    50%  {color: #777777;}
+}
+/*Contact Html CSS*/
+
+.contactLeft {
+    border-right: #777777 solid 2px;
+}
+
+.alt{
+    margin-left: 10%;
+}
 
 #button{
     margin-top: 20px;
     padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #4aaaa5;
+    background-color: rgb(43, 43, 43);
     color: #ffffff;
-    border: #4aaaa5 1px solid;
+    border:  #777777 1px solid;
     position: relative;
 }
 
 
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 80px; /* Set the fixed height of the footer here */
-    line-height: 60px; /* Vertically center the text there */
-    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqZiNVTrl3399H4fXz50rJOob25WLoQ_l4G5yrDWS8PinME0cy");
-    color: #ffffff;
-    text-align: center;
-    border-top: solid 8px #ffffff;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 12px;
-    
-  }
+
   
 
+/* Media Query for certian Width*/
 
-/*Alternates Content Heading to Blue Green or Gray8*/
-@-webkit-keyframes apc {
-    0%   {color: #4aaaa5;}
-    50%  {color: #777777;}
+@media only screen and (max-width:765px){
+    .contactLeft {
+        border-right: none;
+    } 
+
+    .apc{
+        text-align: center;
+    }
 }
 
-@keyframes apc {
-    0%   {color: #4aaaa5;}
-    50%  {color: #777777;}
+@media only screen and (max-width:420px){
+   
+    nav{
+       float: left;
+       margin-left: 37%;
+       margin-bottom: 15px;
+   }
+
+   .name{
+       margin-left: 10%;
+
+   }
 }
 
-
-
-
-/*Makes Banners Alternate colors*/
-@-webkit-keyframes banner {
-    0%   {background-color:#4aaaa5; color: #ffffff;}
-    50%  {background-color: #777777; color: #ffffff;}
-    100%  {background-color:#4aaaa5; color: #ffffff; }
-}
-
-@keyframes banner {
-    0%   {background-color:#4aaaa5; color: #ffffff;}
-    50%  {background-color: #777777; color: #ffffff;}
-    100%  {background-color:#4aaaa5; color: #ffffff; }
-}
 
